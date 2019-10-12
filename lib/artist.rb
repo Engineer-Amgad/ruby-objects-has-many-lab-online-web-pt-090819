@@ -21,8 +21,8 @@ class Artist
   
   def self.song_count
     song_count = []
-    song_count = Song.all.select {|song| song.artist == self}
+    song_count = Song.all 
     song_count.length
-    binding.pry
+    
   end 
 end 
